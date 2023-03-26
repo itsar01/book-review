@@ -15,7 +15,7 @@ export function ReviewCard({ review }) {
         <h5 className="card-year">{review.year}</h5>
         <p className="card-text">Rating: {review.rating}</p>
         <p className="card-text">Review by: username</p>
-        <a href="#" class="btn btn-primary">
+        <a href="#" className="btn btn-primary">
           Go to review
         </a>
       </div>
