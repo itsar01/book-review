@@ -3,8 +3,8 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 export function ReviewCard({ review }) {
   return (
-    <Card style={{ width: "18rem", padding: "1rem", margin: "1rem" }}>
-      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+    <Card style={{ width: "10rem", padding: "1rem", margin: "1rem" }}>
+      <Card.Img variant="top" src={review.imageUrl} />
       <Card.Body>
         <Card.Title></Card.Title>
         {/* <Card.Text>
