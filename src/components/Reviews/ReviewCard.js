@@ -3,25 +3,22 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 export function ReviewCard({ review }) {
   return (
-    <Card style={{ width: "10rem", padding: "1rem", margin: "1rem" }}>
-      <Card.Img variant="top" src={review.imageUrl} />
-      <Card.Body>
-        <Card.Title></Card.Title>
-        {/* <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text> */}
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>{review.title}</ListGroup.Item>
-        <ListGroup.Item>{review.year}</ListGroup.Item>
-        <ListGroup.Item>{review.author}</ListGroup.Item>
-        <ListGroup.Item>Likes: 0</ListGroup.Item>
-        <ListGroup.Item>Rating: {review.rating}</ListGroup.Item>
-      </ListGroup>
-      <Card.Body>
-        <Card.Link href="#">Details</Card.Link>
-      </Card.Body>
-    </Card>
+    <div className="card m-3" style={{ width: "15rem" }}>
+      <img
+        className="card-img-top"
+        src={review.imageUrl}
+        alt="Card image cap"
+      />
+      <div className="card-body">
+        <h5 className="card-title">{review.title}</h5>
+        <h5 className="card-author">{review.author}</h5>
+        <h5 className="card-year">{review.year}</h5>
+        <p className="card-text">Rating: {review.rating}</p>
+        <p className="card-text">Review by: username</p>
+        <a href="#" class="btn btn-primary">
+          Go to review
+        </a>
+      </div>
+    </div>
   );
 }
