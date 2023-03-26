@@ -17,6 +17,17 @@ export const Register = () => {
           />
         </div>
         <div className="form-group my-2">
+          <label htmlFor="exampleInputEmail1">Username</label>
+          <input
+            type="username"
+            className="form-control"
+            id="username"
+            name="username"
+            aria-describedby="username"
+            placeholder="Enter username"
+          />
+        </div>
+        <div className="form-group my-2">
           <label htmlFor="exampleInputPassword1">Password</label>
           <input
             type="password"
