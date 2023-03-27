@@ -1,5 +1,4 @@
-import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
+import { Link } from "react-router-dom";
 
 export function ReviewCard({ review }) {
   return (
@@ -15,9 +14,9 @@ export function ReviewCard({ review }) {
         <h5 className="card-year">{review.year}</h5>
         <p className="card-text">Rating: {review.rating}</p>
         <p className="card-text">Review by: username</p>
-        <a href="#" className="btn btn-primary">
+        <Link to={`/details/${review._id}`} className="btn btn-primary">
           Go to review
-        </a>
+        </Link>
       </div>
     </div>
   );

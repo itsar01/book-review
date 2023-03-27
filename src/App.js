@@ -10,6 +10,7 @@ import { Register } from "./components/Register/Register.js";
 import { Login } from "./components/Login/Login.js";
 import { Home } from "./components/Home/Home.js";
 import { Reviews } from "./components/Reviews/Reviews.js";
+import { Details } from "./components/Details/Details.js";
 
 function App() {
   const navigate = useNavigate();
@@ -41,6 +42,7 @@ function App() {
         ></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/details/:reviewId" element={<Details />}></Route>
       </Routes>
       <Footer />
     </>
